@@ -48,8 +48,26 @@ router.put("/:id", (req, res) => {
   // update a category by its `id` value
 });
 
-router.delete("/:id", (req, res) => {
+router.delete("/:id", async (req, res) => {
   // delete a category by its `id` value
+  try {
+    const categoryData = await Category.destry({
+      where: {
+        id: req.params.id,
+      },
+    });
+    if (!categoryData) {
+      res
+        .status(400)
+        .json({
+          message: "There is no category that exists with that id inputted.",
+        });
+      return;
+    }
+    res.status(200).json(categoryData);
+  } catch (err) {
+    console.log(err);
+  }
 });
 
 module.exports = router;
