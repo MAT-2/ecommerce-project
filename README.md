@@ -17,6 +17,7 @@ Module 13 - An e-commerce website that has an interactive database in the back-e
 - https://sequelize.org/docs/v6/core-concepts/model-basics/
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch
 - https://www.w3schools.com/js/js_errors.asp
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT
 
 ## License
 

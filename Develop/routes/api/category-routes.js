@@ -44,8 +44,16 @@ router.post("/", async (req, res) => {
   }
 });
 
-router.put("/:id", (req, res) => {
+router.put("/:id", async (req, res) => {
   // update a category by its `id` value
+  try {
+    const categoryData = await Category.put({
+      category_id: req.body.category_id,
+    });
+    res.status(200).json(categoryData);
+  } catch (err) {
+    res.status(404).json(err);
+  }
 });
 
 router.delete("/:id", async (req, res) => {
@@ -57,11 +65,9 @@ router.delete("/:id", async (req, res) => {
       },
     });
     if (!categoryData) {
-      res
-        .status(400)
-        .json({
-          message: "There is no category that exists with that id inputted.",
-        });
+      res.status(400).json({
+        message: "There is no category that exists with that id inputted.",
+      });
       return;
     }
     res.status(200).json(categoryData);
