@@ -20,6 +20,10 @@ Tag.init(
     products: {
       type: DataTypes.STRING,
       allowNull: false,
+      references: {
+        model: "tag",
+        key: "id",
+      },
     },
   },
   {
