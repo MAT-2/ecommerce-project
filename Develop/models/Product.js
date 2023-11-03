@@ -25,7 +25,7 @@ Product.init(
       allowNull: false,
     },
     stock: {
-      type: DataTypes.BOOLEAN,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     category_id: {
