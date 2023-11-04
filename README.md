@@ -24,3 +24,4 @@ Module 13 - An e-commerce website that has an interactive database in the back-e
 REFER TO LICENSE
 
 ## Video Walkthrough
+https://drive.google.com/file/d/1iSFWOi8ZpqWz_vnmrwrMOCCQEfLFW7rM/view
