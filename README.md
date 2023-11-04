@@ -1,6 +1,6 @@
 # Description
 
-Module 13 - An e-commerce website that has an interactive database in the back-end.
+Module 13 - An e-commerce website that has an interactive database in the back-end. Being able to create route connections via HTTP requests was fun to learn. My only issue was that I was running across a bug that prevents me loading my results via the terminal and through Insomnia.
 
 ## Installation
 
@@ -22,3 +22,5 @@ Module 13 - An e-commerce website that has an interactive database in the back-e
 ## License
 
 REFER TO LICENSE
+
+## Video Walkthrough
